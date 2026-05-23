@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+  rag-agent:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - GROQ_API_KEY=${GROQ_API_KEY}
+    volumes:
+      - ./chroma_db:/app/chroma_db   # persist vector DB between restarts
+      - ./docs:/app/docs             # persist documents
+      - ./logs:/app/logs             # persist audit + metrics logs
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3

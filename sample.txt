@@ -1,0 +1,19 @@
+LTE (Long-Term Evolution) is a standard for wireless broadband communication.
+It provides high-speed data for mobile phones and data terminals.
+LTE supports download speeds of up to 300 Mbps and upload speeds of up to 75 Mbps.
+
+5G is the fifth generation of mobile network technology.
+It offers significantly faster speeds than LTE, with peak download speeds of up to 20 Gbps.
+5G also provides lower latency, typically under 1 millisecond, enabling real-time applications.
+
+SDN (Software Defined Networking) separates the network control plane from the data plane.
+This allows network administrators to manage network behaviour programmatically.
+Deutsche Telekom uses SDN to build more flexible and scalable network infrastructure.
+
+NFV (Network Functions Virtualisation) replaces dedicated hardware with software running on standard servers.
+Functions like firewalls, load balancers, and routers can be virtualised using NFV.
+This reduces hardware costs and allows faster deployment of new network services.
+
+A RAG (Retrieval Augmented Generation) system enhances LLM responses by retrieving relevant documents.
+Instead of relying solely on training data, RAG grounds responses in up-to-date external knowledge.
+This reduces hallucinations and improves factual accuracy in AI-generated responses.
